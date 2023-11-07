@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>São links que irão levar para outro site</p>
+    <h2>Você pode acessar a <a href="https://maidy.com.br/lista-completa-dos-filmes-da-barbie/" target="_blank" rel="external">lista de filmes da barbie</a>.</h2>
+    <!-- a letra "a" vem de âncora-->
+    <!-- "target" serve para que o link abra em outra guia-->
+    <!-- "rel=external" serve para dizer que o link é externo-->
+    <h2>Você também pode acessar a <a href="https://www.youtube.com/watch?v=YDfzSaYJBWU" target="_blank" rel="external">música mais marcante do melhor filme da barbie</a></h2>
+    
+    <h1>Usando links internos</h1>
+    <p>São links que vão fazer uma relação com outra página que está dentro do nosso servidor e diz respeito a própria página</p>
+    <p>Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">SEGUNDA PÁGINA</a></p>
+    <!-- rel="next" significa que o link tranfere para uma próxima página-->
+    <p></p>
+    <p>Você também pode acessar a minha <a href="terceira/pag003.html" rel="next" target="_self">TERCEIRA PÁGINA</a></p>
+    <!--target="_self" significa que vai abrir na própria aba-->
+    
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/jogos-vorazes-livro-01.pdf" download="jogos-vorazes-livro-01.pdf" type="application/pdf">Baixar Jogos Vorazes em PDF</a></li>
+        <li><a href="livro/jogos-vorazes-livro-01.zip" download="jogos-vorazes-livro-01.zip" type="application/zip">Baixar Zip dos Jogos Vorazes</a></li>
+    </ul>
+</body>
+</html>

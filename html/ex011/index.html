@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <!--Tag do source é source:media;type-->
+    <!-- Se a figura G for grande demais para a tela do dispositivo, vai carregar a de tamnho M. Se a de tamanho M, for grande demais para a tela do dispositivo, vai carregar a do tamanho P. A ondem é de baixo para cima-->
+   
+    <!--   
+        Outro jeito de fazer:
+            <picture>
+            <source media="(min-width: 1050px)" srcset="imagens/foto-g.png" type="image/png">
+            <source media="(min-width: 750px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-p.png" alt="imagem flexível">
+            </picture>
+    -->
+
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender a reproduzir áudios usando HTML5</p>
+    <audio src="midias/a-young-man.mp3" controls></audio>
+    <!-- MP3 WAV OGG-->
+    <!--O tipo WAV tem uma qualidade muito boa e por isso deve ser evitado, a não ser que seja para baixar-->
+    <!--Tag "audio"-->
+
+    <audio preload="metadata" controls loop >
+        <source src="midias/vacation-uke.mp3" type="audio/mpeg">
+        <source src="midias/vacation-uke.ogg" type="audio/ogg">
+        <source src="midias/vacation-uke.wav" type="audio/wav">
+        <!--A tag é source:src-->
+        <p>Se ele não conseguir nenhum desses, infelizmente seu navegador não consegue reproduzir áudio. Então 
+        <a href="midias/vacation-uke.mp3">baixe aqui</a>
+        .
+        </p>
+        <!-- A ordem é de cima para baixo-->
+    </audio>
+    <!--O autoplay não funciona nos sites em que eu testei, provavelmente já foi proibido pela maioria, pois atrapalha a esperiência do usuário-->
+
+</body>
+</html>
